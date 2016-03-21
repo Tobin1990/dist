@@ -1,0 +1,1 @@
+define("common/widget/widget-footer",function(){function e(){var e={requires:"^rdWidget",transclude:!0,template:'<div class="widget-footer" ng-transclude></div>',restrict:"E"};return e}angular.module("DBoss").directive("rdWidgetFooter",e)});

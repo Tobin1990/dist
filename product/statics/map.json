@@ -1,0 +1,209 @@
+{
+    "res": {
+        "lib/mod.js": {
+            "uri": "/node_lesson/test/dboss/product//statics/lib/mod.js",
+            "type": "js",
+            "pkg": "p0"
+        },
+        "bower_components/bootstrap/less/bootstrap.less": {
+            "uri": "/node_lesson/test/dboss/product//statics/bower_components/bootstrap/less/bootstrap.css",
+            "type": "css"
+        },
+        "bower_components/font-awesome/css/font-awesome.css": {
+            "uri": "/node_lesson/test/dboss/product//statics/bower_components/font-awesome/css/font-awesome.css",
+            "type": "css",
+            "pkg": "p1"
+        },
+        "ace-ui/css/ace.min": {
+            "uri": "/node_lesson/test/dboss/product//statics/modules/ace-ui/css/ace.min.css",
+            "type": "css"
+        },
+        "ace-ui/css/ace-rtl.min": {
+            "uri": "/node_lesson/test/dboss/product//statics/modules/ace-ui/css/ace-rtl.min.css",
+            "type": "css"
+        },
+        "ace-ui/css/ace-skins.min": {
+            "uri": "/node_lesson/test/dboss/product//statics/modules/ace-ui/css/ace-skins.min.css",
+            "type": "css"
+        },
+        "jquery/jquery-2.0.3.min": {
+            "uri": "/node_lesson/test/dboss/product//statics/modules/jquery/jquery-2.0.3.min.js",
+            "type": "js"
+        },
+        "bower_components/angular/angular.js": {
+            "uri": "/node_lesson/test/dboss/product//statics/bower_components/angular/angular.js",
+            "type": "js",
+            "pkg": "p0"
+        },
+        "bower_components/angular-bootstrap/ui-bootstrap-tpls.js": {
+            "uri": "/node_lesson/test/dboss/product//statics/bower_components/angular-bootstrap/ui-bootstrap-tpls.js",
+            "type": "js",
+            "pkg": "p0"
+        },
+        "bower_components/angular-cookies/angular-cookies.js": {
+            "uri": "/node_lesson/test/dboss/product//statics/bower_components/angular-cookies/angular-cookies.js",
+            "type": "js",
+            "pkg": "p0"
+        },
+        "bower_components/ui-router/release/angular-ui-router.js": {
+            "uri": "/node_lesson/test/dboss/product//statics/bower_components/ui-router/release/angular-ui-router.js",
+            "type": "js",
+            "pkg": "p0"
+        },
+        "ace-ui/js/ace_extra": {
+            "uri": "/node_lesson/test/dboss/product//statics/modules/ace-ui/js/ace_extra.js",
+            "type": "js"
+        },
+        "ace-ui/js/ace-elements.min": {
+            "uri": "/node_lesson/test/dboss/product//statics/modules/ace-ui/js/ace-elements.min.js",
+            "type": "js"
+        },
+        "ace-ui/js/ace-extra.min": {
+            "uri": "/node_lesson/test/dboss/product//statics/modules/ace-ui/js/ace-extra.min.js",
+            "type": "js"
+        },
+        "ace-ui/js/ace.min": {
+            "uri": "/node_lesson/test/dboss/product//statics/modules/ace-ui/js/ace.min.js",
+            "type": "js"
+        },
+        "common/alerts/alerts": {
+            "uri": "/node_lesson/test/dboss/product//statics/modules/common/alerts/alerts.js",
+            "type": "js"
+        },
+        "common/sidebar/ace_extra": {
+            "uri": "/node_lesson/test/dboss/product//statics/modules/common/sidebar/ace_extra.js",
+            "type": "js"
+        },
+        "common/widget/loading": {
+            "uri": "/node_lesson/test/dboss/product//statics/modules/common/widget/loading.js",
+            "type": "js"
+        },
+        "common/widget/widget-body": {
+            "uri": "/node_lesson/test/dboss/product//statics/modules/common/widget/widget-body.js",
+            "type": "js"
+        },
+        "common/widget/widget-footer": {
+            "uri": "/node_lesson/test/dboss/product//statics/modules/common/widget/widget-footer.js",
+            "type": "js"
+        },
+        "common/widget/widget-header": {
+            "uri": "/node_lesson/test/dboss/product//statics/modules/common/widget/widget-header.js",
+            "type": "js"
+        },
+        "common/widget/widget": {
+            "uri": "/node_lesson/test/dboss/product//statics/modules/common/widget/widget.js",
+            "type": "js",
+            "deps": [
+                "common/widget/widget-header",
+                "common/widget/widget-body",
+                "common/widget/widget-footer",
+                "common/widget/loading"
+            ]
+        },
+        "modules/common/widget/widget.less": {
+            "uri": "/node_lesson/test/dboss/product//statics/modules/common/widget/widget.css",
+            "type": "css"
+        },
+        "jquery/flot/jquery.flot.min": {
+            "uri": "/node_lesson/test/dboss/product//statics/modules/jquery/flot/jquery.flot.min.js",
+            "type": "js"
+        },
+        "jquery/flot/jquery.flot.pie.min": {
+            "uri": "/node_lesson/test/dboss/product//statics/modules/jquery/flot/jquery.flot.pie.min.js",
+            "type": "js"
+        },
+        "jquery/flot/jquery.flot.resize.min": {
+            "uri": "/node_lesson/test/dboss/product//statics/modules/jquery/flot/jquery.flot.resize.min.js",
+            "type": "js"
+        },
+        "jquery/jquery.mobile.custom.min": {
+            "uri": "/node_lesson/test/dboss/product//statics/modules/jquery/jquery.mobile.custom.min.js",
+            "type": "js"
+        },
+        "main": {
+            "uri": "/node_lesson/test/dboss/product//statics/modules/main/main.js",
+            "type": "js",
+            "extras": {
+                "async": [
+                    "common/sidebar/ace_extra"
+                ]
+            },
+            "deps": [
+                "router",
+                "partial/sidebar/side_bar"
+            ]
+        },
+        "pages/dashboard/dashboard": {
+            "uri": "/node_lesson/test/dboss/product//statics/modules/pages/dashboard/dashboard.js",
+            "type": "js",
+            "deps": [
+                "common/alerts/alerts",
+                "common/widget/widget"
+            ]
+        },
+        "pages/index/dashboard": {
+            "uri": "/node_lesson/test/dboss/product//statics/modules/pages/index/dashboard.js",
+            "type": "js",
+            "deps": [
+                "common/alerts/alerts",
+                "common/widget/widget"
+            ]
+        },
+        "pages/index/index": {
+            "uri": "/node_lesson/test/dboss/product//statics/modules/pages/index/index.js",
+            "type": "js",
+            "extras": {
+                "async": [
+                    "jquery/flot/jquery.flot.min",
+                    "jquery/flot/jquery.flot.pie.min",
+                    "jquery/flot/jquery.flot.resize.min"
+                ]
+            }
+        },
+        "pages/tables/tableCtrl.async": {
+            "uri": "/node_lesson/test/dboss/product//statics/modules/pages/tables/tableCtrl.async.js",
+            "type": "js"
+        },
+        "pages/tables/tables": {
+            "uri": "/node_lesson/test/dboss/product//statics/modules/pages/tables/tables.js",
+            "type": "js",
+            "extras": {
+                "async": [
+                    "pages/tables/tableCtrl.async"
+                ]
+            }
+        },
+        "partial/sidebar/side_bar": {
+            "uri": "/node_lesson/test/dboss/product//statics/modules/partial/sidebar/side_bar.js",
+            "type": "js"
+        },
+        "router": {
+            "uri": "/node_lesson/test/dboss/product//statics/modules/router/router.js",
+            "type": "js",
+            "deps": [
+                "pages/index/index",
+                "pages/tables/tables"
+            ]
+        }
+    },
+    "pkg": {
+        "p0": {
+            "uri": "/node_lesson/test/dboss/product//statics/pkg/vendor.js",
+            "type": "js",
+            "has": [
+                "lib/mod.js",
+                "bower_components/angular/angular.js",
+                "bower_components/angular-bootstrap/ui-bootstrap-tpls.js",
+                "bower_components/angular-cookies/angular-cookies.js",
+                "bower_components/ui-router/release/angular-ui-router.js"
+            ]
+        },
+        "p1": {
+            "uri": "/node_lesson/test/dboss/product//statics/pkg/vendor.css",
+            "type": "css",
+            "has": [
+                "bower_components/font-awesome/css/font-awesome.css"
+            ]
+        }
+    }
+}

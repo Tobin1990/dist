@@ -1,0 +1,402 @@
+<!doctype html>
+<html lang="en" ng-app="DBoss">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+        <title>DBOSS前端监控上报管理系统</title>
+        
+    
+    <link rel="stylesheet" type="text/css" href="/node_lesson/test/dboss/product//statics/bower_components/bootstrap/less/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="/node_lesson/test/dboss/product//statics/pkg/vendor.css" />
+    <link rel="stylesheet" type="text/css" href="/node_lesson/test/dboss/product//statics/modules/ace-ui/css/ace.min.css" />
+    <link rel="stylesheet" type="text/css" href="/node_lesson/test/dboss/product//statics/modules/ace-ui/css/ace-rtl.min.css" />
+    <link rel="stylesheet" type="text/css" href="/node_lesson/test/dboss/product//statics/modules/ace-ui/css/ace-skins.min.css" />
+    <style>
+        .btns {
+            display: inline-block;
+            padding: 6px 12px;
+            margin-bottom: 0;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1.42857143;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: middle;
+            -ms-touch-action: manipulation;
+            touch-action: manipulation;
+            cursor: pointer;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            background-image: none;
+            border: 1px solid transparent;
+            border-radius: 4px;
+        }
+        </style>
+</head>
+    <body ng-controller="MasterCtrl">
+        <div class="navbar navbar-default" id="navbar">
+            <!-- Header Bar -->
+<div class="navbar-container" id="navbar-container">
+    <div class="navbar-header pull-left">
+        <a href="#" class="navbar-brand">
+            <small>
+                <i class="icon-leaf"></i>
+                DBOSS前端监控上报管理系统
+            </small>
+        </a><!-- /.brand -->
+    </div><!-- /.navbar-header -->
+    <div class="navbar-header pull-right" role="navigation">
+        <ul class="nav ace-nav">
+            <li class="light-blue">
+                <a data-toggle="dropdown" href="#" class="dropdown-toggle">
+                    <img class="nav-user-photo" src="assets/avatars/user.jpg" alt="Jason's Photo" />
+                    <span class="user-info">
+                        <small>欢迎光临,</small>
+                        panjian01
+                    </span>
+                    <i class="icon-caret-down"></i>
+                </a>
+
+                <ul class="user-menu pull-right dropdown-menu dropdown-yellow dropdown-caret dropdown-close">
+                    <li>
+                        <a href="#">
+                            <i class="icon-cog"></i>
+                            设置
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <i class="icon-user"></i>
+                            个人资料
+                        </a>
+                    </li>
+
+                    <li class="divider"></li>
+
+                    <li>
+                        <a href="#">
+                            <i class="icon-off"></i>
+                            退出
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul><!-- /.ace-nav -->
+    </div><!-- /.navbar-header -->
+</div><!-- /.container -->
+            <!-- End Header Bar -->
+        </div>
+    
+        <div class="main-container" id="main-container">
+            <div class="main-container-inner">
+                <a class="menu-toggler" id="menu-toggler" href="#">
+                    <span class="menu-text"></span>
+                </a>
+                <div class="sidebar" id="sidebar">
+                    <!-- Sidebar -->
+<ul class="nav nav-list">
+    <li class="active">
+        <a href="#/"  class="dropdown-toggle">
+            <i class="icon-dashboard"></i>
+            <span class="menu-text">首页</span>
+        </a>
+    </li>
+    <li>
+        <a href="#" class="dropdown-toggle">
+            <i class="icon-desktop"></i>
+            <span class="menu-text">检索</span>
+            <b class="arrow icon-angle-down"></b>
+        </a>
+
+        <ul class="submenu">
+           <li>
+                <a href="#/index">
+                    <i class="icon-double-angle-right"></i>
+                    用户
+                </a>
+            </li>
+            <li>
+                <a href="#/tables">
+                    <i class="icon-double-angle-right"></i>
+                    配置
+                </a>
+            </li>
+            <li>
+                <a href="#/abc">
+                    <i class="icon-double-angle-right"></i>
+                    源IP
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="icon-double-angle-right"></i>
+                    目标IP
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="icon-double-angle-right"></i>
+                     终端IP
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="icon-double-angle-right"></i>
+                    时间
+                </a>
+            </li>
+
+            <li>
+                <a href="#" class="dropdown-toggle">
+                    <i class="icon-double-angle-right"></i>
+                    全文检索
+                </a>
+            </li>
+        </ul>
+    </li>
+
+    <li>
+        <a href="#" class="dropdown-toggle">
+            <i class="icon-list"></i>
+            <span class="menu-text">录像</span>
+
+            <b class="arrow icon-angle-down"></b>
+        </a>
+
+        <ul class="submenu">
+            <li>
+                <a href="#.html">
+                    <i class="icon-double-angle-right"></i>
+                    登录会语
+                </a>
+            </li>
+
+            <li>
+                <a href="#.html">
+                    <i class="icon-double-angle-right"></i>
+                    字符
+                </a>
+            </li>
+            <li>
+                <a href="#.html">
+                    <i class="icon-double-angle-right"></i>
+                    数据
+                </a>
+            </li>
+        </ul>
+    </li>
+
+    <li>
+        <a href="#" class="dropdown-toggle">
+            <i class="icon-edit"></i>
+            <span class="menu-text"> 监控 </span>
+
+            <b class="arrow icon-angle-down"></b>
+        </a>
+
+        <ul class="submenu">
+            <li>
+                <a href="#">
+                    <i class="icon-double-angle-right"></i>
+                    登录
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <a href="#" class="dropdown-toggle">
+            <i class="icon-edit"></i>
+            <span class="menu-text"> 策略 </span>
+
+            <b class="arrow icon-angle-down"></b>
+        </a>
+
+        <ul class="submenu">
+            <li>
+                <a href="#">
+                    <i class="icon-double-angle-right"></i>
+                    全局策略
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="icon-double-angle-right"></i>
+                    用户策略
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="icon-double-angle-right"></i>
+                    agmt
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <a href="#" class="dropdown-toggle">
+            <i class="icon-edit"></i>
+            <span class="menu-text"> 管理 </span>
+
+            <b class="arrow icon-angle-down"></b>
+        </a>
+
+        <ul class="submenu">
+            <li>
+                <a href="#">
+                    <i class="icon-double-angle-right"></i>
+                    备份
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="icon-double-angle-right"></i>
+                    用户
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="icon-double-angle-right"></i>
+                    角色
+                </a>
+            </li>
+            
+            <li>
+                <a href="#">
+                    <i class="icon-double-angle-right"></i>
+                    许可
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="icon-double-angle-right"></i>
+                    升级
+                </a>
+            </li>
+            <li>
+                <a href="#" class="dropdown-toggle">
+                    <i class="icon-double-angle-right"></i>
+                    日志
+                    <b class="arrow icon-angle-down"></b>
+                </a>
+                <ul class="submenu">
+                    <li>
+                        <a href="#">
+                            <i class="icon-leaf"></i>
+                            操作
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="dropdown-toggle">
+                            <i class="icon-pencil"></i>
+                            系统
+                            <b class="arrow icon-angle-down"></b>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="icon-double-angle-right"></i>
+                    集群
+                </a>
+            </li>
+        </ul>
+    </li>
+</ul><!-- /.nav-list -->
+<div class="sidebar-collapse" id="sidebar-collapse">
+    <i class="icon-double-angle-left" data-icon1="icon-double-angle-left" data-icon2="icon-double-angle-right"></i>
+</div>
+                    <!-- End Sidebar -->
+                </div>
+                <div class="main-content">
+                    <!-- Crumb -->
+                    <div class="breadcrumbs" id="breadcrumbs">
+
+    <ul class="breadcrumb">
+        <li>
+            <i class="icon-home home-icon"></i>
+            <a href="#">首页</a>
+        </li>
+        <li class="active">控制台</li>
+    </ul><!-- .breadcrumb -->
+
+    <div class="nav-search" id="nav-search">
+        <form class="form-search">
+            <span class="input-icon">
+                <input type="text" placeholder="Search ..." class="nav-search-input" id="nav-search-input" autocomplete="off" />
+                <i class="icon-search nav-search-icon"></i>
+            </span>
+        </form>
+    </div><!-- #nav-search -->
+</div>
+                    <!-- End Crumb -->
+                    <!-- Main Content -->
+                    <div class="page-content" ui-view></div>
+                    <!-- End Main Content -->
+                    <a href="#" id="btn-scroll-up" class="btn-scroll-up btn btn-sm btn-inverse">
+                        <i class="icon-double-angle-up icon-only bigger-110"></i>
+                    </a>
+                </div>
+            </div><!-- End Main container inner -->
+        </div><!-- End Main container -->
+        
+    
+<script type="text/javascript" src="/node_lesson/test/dboss/product//statics/pkg/vendor.js"></script>
+<script type="text/javascript">/*resourcemap*/
+require.resourceMap({
+  "res": {
+    "common/sidebar/ace_extra": {
+      "url": "/node_lesson/test/dboss/product//statics/modules/common/sidebar/ace_extra.js",
+      "type": "js"
+    },
+    "jquery/flot/jquery.flot.min": {
+      "url": "/node_lesson/test/dboss/product//statics/modules/jquery/flot/jquery.flot.min.js",
+      "type": "js"
+    },
+    "jquery/flot/jquery.flot.pie.min": {
+      "url": "/node_lesson/test/dboss/product//statics/modules/jquery/flot/jquery.flot.pie.min.js",
+      "type": "js"
+    },
+    "jquery/flot/jquery.flot.resize.min": {
+      "url": "/node_lesson/test/dboss/product//statics/modules/jquery/flot/jquery.flot.resize.min.js",
+      "type": "js"
+    },
+    "pages/tables/tableCtrl.async": {
+      "url": "/node_lesson/test/dboss/product//statics/modules/pages/tables/tableCtrl.async.js",
+      "type": "js"
+    }
+  },
+  "pkg": {}
+});</script>
+<script type="text/javascript" src="/node_lesson/test/dboss/product//statics/modules/pages/index/index.js"></script>
+<script type="text/javascript" src="/node_lesson/test/dboss/product//statics/modules/pages/tables/tables.js"></script>
+<script type="text/javascript" src="/node_lesson/test/dboss/product//statics/modules/router/router.js"></script>
+<script type="text/javascript" src="/node_lesson/test/dboss/product//statics/modules/partial/sidebar/side_bar.js"></script>
+<script type="text/javascript" src="/node_lesson/test/dboss/product//statics/modules/main/main.js"></script>
+<script>
+    try{ace.settings.check('navbar' , 'fixed')}catch(e){}
+
+
+    try{ace.settings.check('sidebar' , 'fixed')}catch(e){}
+
+
+    try{ace.settings.check('sidebar' , 'collapsed')}catch(e){}
+
+
+        try{ace.settings.check('breadcrumbs' , 'fixed')}catch(e){}
+    </script>
+<script src="/node_lesson/test/dboss/product//statics/modules/jquery/jquery-2.0.3.min.js"></script>
+<script type="text/javascript">
+        if("ontouchend" in document) document.write("<script src='/modules/jquery/jquery.mobile.custom.min.js'>"+"<"+"script>");
+    
+
+        require('main');
+    </script>
+</body>
+</html>

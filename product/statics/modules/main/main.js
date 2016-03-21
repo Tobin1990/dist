@@ -1,0 +1,1 @@
+define("main",function(o){var r=angular.module("DBoss",["ui.bootstrap","ui.router","ngCookies"]);o("router"),r.controller("MasterCtrl",["$scope","$cookieStore",function(){o.async(["common/sidebar/ace_extra"]),o("partial/sidebar/side_bar")}])});

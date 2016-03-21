@@ -1,0 +1,1 @@
+define("common/widget/widget",function(e){function d(){var e={transclude:!0,template:'<div class="widget" ng-transclude></div>',restrict:"EA"};return e}e("common/widget/widget-header"),e("common/widget/widget-body"),e("common/widget/widget-footer"),e("common/widget/loading"),angular.module("DBoss").directive("rdWidget",d)});
