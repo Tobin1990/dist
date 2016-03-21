@@ -1,8 +1,8 @@
 //由于使用了bower，有很多非必须资源。通过set project.files对象指定需要编译的文件夹和引用的资源
 fis.set('project.files', ['page/**', 'map.json', 'modules/**', 'lib']);
 
-fis.set('location', '/kent_project/baidu/project/dboss/dist'); //本地xampp路径
-fis.set('product', '/kent_project/baidu/project/dboss/product'); //本地模拟生产路径
+fis.set('location', '/node_lesson/test/dboss/dist/'); //本地xampp路径
+fis.set('product', '/node_lesson/test/dboss/product/'); //本地模拟生产路径
 fis.set('statics', '/statics'); //static目录
 
 //FIS modjs模块化方案，您也可以选择amd/commonjs等
@@ -94,7 +94,7 @@ fis.media('xampp').match("**/*", {
         url: '${location}${statics}$&' //在本地xampp环境下的文件访问路径
     }).match('*', {
     deploy: fis.plugin('local-deliver', {
-        to: 'd://xampp/htdocs/kent_project/baidu/project/dboss/dist' // 本地物理路径
+        to: 'e://wamp/www/node_lesson/test/dboss/dist/' // 本地物理路径
     })
 });
 /**********************生产环境下CSS、JS压缩合并*****************/
@@ -108,6 +108,10 @@ fis.media('prod').match("**/*", {
         optimizer: fis.plugin('uglify-js')
     })
     .match('/**(\.async).js', {
+        preprocessor: null,
+        optimizer: null
+    })
+    .match('/**(\.min).js', {
         preprocessor: null,
         optimizer: null
     })
@@ -136,6 +140,6 @@ fis.media('prod').match("**/*", {
     .match('*', {
         deploy: fis.plugin('local-deliver', {
         //receiver: 'http://cq.01.p.p.baidu.com:8888/receiver.php', //接收脚本
-            to: 'd://xampp/htdocs/kent_project/baidu/project/dboss/product' // 本地物理路径
+            to: 'e://wamp/www/node_lesson/test/dboss/product/' // 本地物理路径
         })
     });
