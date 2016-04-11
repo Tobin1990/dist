@@ -1,9 +1,10 @@
 <script type="text/javascript">
     try{ace.settings.check('sidebar' , 'fixed')}catch(e){}
+    require('side_request');
 </script>
 <ul class="nav nav-list">
     <li class="active">
-        <a href="#/"  class="dropdown-toggle">
+        <a href="#/index"  class="dropdown-toggle">
             <i class="icon-dashboard"></i>
             <span class="menu-text">首页</span>
         </a>
@@ -17,7 +18,7 @@
 
         <ul class="submenu">
            <li>
-                <a href="#/index">
+                <a href="#/user">
                     <i class="icon-double-angle-right"></i>
                     用户
                 </a>
@@ -29,20 +30,20 @@
                 </a>
             </li>
             <li>
-                <a href="#/abc">
+                <a href="#/sourceIP">
                     <i class="icon-double-angle-right"></i>
                     源IP
                 </a>
             </li>
 
             <li>
-                <a href="#">
+                <a href="#/targetIP">
                     <i class="icon-double-angle-right"></i>
                     目标IP
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="#/terminalIP">
                     <i class="icon-double-angle-right"></i>
                      终端IP
                 </a>
@@ -87,7 +88,7 @@
                 </a>
             </li>
             <li>
-                <a href="#.html">
+                <a href="#/chart">
                     <i class="icon-double-angle-right"></i>
                     数据
                 </a>

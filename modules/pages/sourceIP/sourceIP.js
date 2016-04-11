@@ -1,8 +1,8 @@
 
 
 module.exports = {
-    url: '/tables',
-    template: __inline('./tables.html'),
+    url: '/sourceIP',
+    template: __inline('./sourceIP.html'),
     //注意如果开启压缩，应采取此方式注入对象，否则压缩后将找不到
     controller : ["$scope","$injector","$http",function($scope, $injector,$http) {
         //支持异步加载controller
@@ -17,4 +17,3 @@ module.exports = {
         // });
     }]
 };
-require('../../common/paging/tabPading.js');
